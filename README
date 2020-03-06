@@ -1,0 +1,45 @@
+Ciobanu Alin-Matei 315 CB
+
+	Arhiva contine 3 programe .c si un header "biblioteca" care face
+legatura intre ele.
+
+functii_admin.c :
+- contine functiile specifice administratorului
+1) void adauga - adauga cardul in baza de date
+2) void realoc - creeaza o baza de date redimensionata si copiaza elementele
+din baza veche pe pozitia actualizata
+3) void show_all - afiseaza toate cardurile din baza de date
+4) void show_card - afiseaza un anume card
+5) void delete_card - sterge un card din baza de date
+6) unblock_card - deblocheaza un card
+7) reverse_transaction - anuleaza o tranzactie
+
+
+functii_client.c
+- contine functiile specifice clientului
+1) void insert_card: introduce un card
+2) void cancel_card: operatia inversa
+3) void pin_change: schimba pinul unui card
+4) balance_inquiry: afiseaza soldul curent de pe card
+5) void recharge: adauga o suma de bani pe card
+6) void cash_withdrawal: scoate o suma de bani de pe card
+7) transfer_funds: trimite o suma de bani de pe un card pe altul
+
+functii_lista.c
+- contine functii ajutatoare pentru lucrul cu liste
+- le folosesc in implementarea functiilor de mai sus
+1) THistory AlocHistory - aloca o celula de tip history
+2) TListaC AlocCard - aloca o celula de tip card
+3) TLista AlocCelula - aloca o celula mare
+4) int check - verifica daca pin-ul este format doar din cifre
+5) int suma - calculeaza suma cifrelor numarului unui card
+6) int exista - verifica daca un card se afla deja in baza de date
+7) void inserareIn - inlocuieste o celula in lista mare
+8) void add_card - adauga un card pe pozitia sa
+9) void InsSf - insereaza o celula la sfarsitul liste mari
+10) void insInc - insereaza la inceput in lista de istoric
+11) void elimina - elimina din lista de istoric
+12) void distruge - elibereaza spatiul alocat
+
+tema1.c
+- citesc din fisier si in functie de operatie apelez functia de care am nevoie
